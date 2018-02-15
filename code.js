@@ -307,11 +307,3 @@ function removeWhiteSpace(test) {
 }
 
 
-
-//https://stackoverflow.com/questions/38089208/how-to-flatten-a-clamped-array
-function flatten(arr) {
-  return arr.reduce(function(flat, toFlatten) {
-    // console.log(flat);
-    return flat.concat(Array.isArray(toFlatten) ? flatten(toFlatten) : toFlatten);
-  }, []);
-}
